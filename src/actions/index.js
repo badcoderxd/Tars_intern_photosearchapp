@@ -7,7 +7,7 @@ export function artistList(keywords){
                     .then(response => response.data.results)
                     console.log(request)
     const newreq = axios.get(`https://nodejspract.herokuapp.com/imexample`)
-                    .then(response => {response})
+                    .then(response => response)
                     console.log(newreq)
     return {
         type: 'GET_ARTISTS',
