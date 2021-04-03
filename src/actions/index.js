@@ -11,6 +11,7 @@ export function artistList(keywords){
                                        console.log(response);
                                       })
                     console.log(newreq)
+    console.log("hello weold")
     return {
         type: 'GET_ARTISTS',
         payload: request
