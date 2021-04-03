@@ -3,15 +3,11 @@ const URL = 'https://api.unsplash.com/photos/?client_id=hgCjeF3JU5se3taX0uuhsd16
 
 
 export function artistList(keywords){
-    const request = axios.get(`https://api.unsplash.com/search/photos?query=${keywords}&client_id=hgCjeF3JU5se3taX0uuhsd16bMmmAK7wQV1iGy0FRHM`)
+    const request = axios.get(`https://nodejspract.herokuapp.com/imexample`)
                     .then(response => response.data.results)
-                    console.log(request)
-    const newreq = axios.get(`https://nodejspract.herokuapp.com/imexample`)
-                    .then(response => { response.data;
-                                       console.log(response);
-                                      })
-                    console.log(newreq)
-    console.log("hello weold")
+                    console.log(keywords)
+   
+    //`https://api.unsplash.com/search/photos?query=${keywords}&client_id=hgCjeF3JU5se3taX0uuhsd16bMmmAK7wQV1iGy0FRHM`
     return {
         type: 'GET_ARTISTS',
         payload: request
