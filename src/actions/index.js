@@ -4,7 +4,7 @@ const URL = 'https://api.unsplash.com/photos/?client_id=hgCjeF3JU5se3taX0uuhsd16
 
 export function artistList(keywords){
     const request = axios.get(`https://nodejspract.herokuapp.com/imexample`)
-                    .then(response => response.data.results)
+                    .then(response => response.data)
                     console.log(keywords)
    
     //`https://api.unsplash.com/search/photos?query=${keywords}&client_id=hgCjeF3JU5se3taX0uuhsd16bMmmAK7wQV1iGy0FRHM`
