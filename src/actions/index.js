@@ -6,6 +6,9 @@ export function artistList(keywords){
     const request = axios.get(`https://api.unsplash.com/search/photos?query=${keywords}&client_id=hgCjeF3JU5se3taX0uuhsd16bMmmAK7wQV1iGy0FRHM`)
                     .then(response => response.data.results)
                     console.log(request)
+    const newreq = axios.get(`https://nodejspract.herokuapp.com/imexample`)
+                    .then(response => response.data.results)
+                    console.log(request)
     return {
         type: 'GET_ARTISTS',
         payload: request
