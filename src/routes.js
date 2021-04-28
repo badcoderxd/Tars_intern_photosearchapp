@@ -9,7 +9,7 @@ import ReactGA from 'react-ga';
 const Routes = () => {
         
         useEffect(() => {
-        ReactGA.initialize('G-XXFY03N9YN');
+        ReactGA.initialize('G-71GJSBMBFV');
          // To Report Page View 
         ReactGA.pageview(window.location.pathname + window.location.search);
         }, [])
