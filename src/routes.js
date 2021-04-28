@@ -9,10 +9,14 @@ import ReactGA from 'react-ga';
 const Routes = () => {
         
         useEffect(() => {
-        ReactGA.initialize('G-B4N5H2DTB4');
+        ReactGA.initialize('G-XXFY03N9YN');
          // To Report Page View 
         ReactGA.pageview(window.location.pathname + window.location.search);
         }, [])
+        
+        useEffect(() => {
+        console.log(window.location.pathname)
+         })
         
         return(
             <Switch>
